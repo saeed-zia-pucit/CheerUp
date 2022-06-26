@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_signup"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".views.activities.SignupActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"
+            app:titleTextColor="@color/white"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <!--    <com.airbnb.lottie.LottieAnimationView-->
+    <!--        android:id="@+id/lotti_signup"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_above="@id/rel_main_layout"-->
+    <!--        android:layout_below="@id/appbar"-->
+
+    <!--        android:layout_marginTop="8dp"-->
+    <!--        android:layout_marginBottom="8dp"-->
+    <!--        app:lottie_autoPlay="true"-->
+    <!--        app:lottie_fileName="signup.json"-->
+    <!--        app:lottie_loop="true"></com.airbnb.lottie.LottieAnimationView>-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar"
+        android:fontFamily="@font/oswaldregular"
+        android:gravity="center"
+        android:padding="8dp"
+        android:text="Please setup your profile"
+        android:textColor="@color/white"
+        android:textSize="16sp"></TextView>
+
+    <RelativeLayout
+        android:id="@+id/rel_main_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_input_username"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/editTextColor"
+            android:hint="Username"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/editTextColor"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:drawableEnd="@drawable/ic_mail"
+                android:drawableRight="@drawable/ic_mail"
+                android:drawableTint="@color/white"
+                android:ellipsize="end"
+                android:inputType="textPersonName"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_input_email"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_input_username"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Email"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/editTextColor"
+            app:boxCornerRadiusBottomEnd="4dp"
+
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/editTextColor"
+                android:drawableEnd="@drawable/ic_mail"
+                android:drawableRight="@drawable/ic_mail"
+                android:drawableTint="@color/white"
+                android:editable="false"
+                android:ellipsize="end"
+                android:enabled="false"
+                android:focusable="false"
+                android:inputType="textEmailAddress"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/txt_input_phone"
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_input_email"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:hint="Phone number"
+            android:textColorHint="@color/white"
+            app:boxBackgroundColor="@color/editTextColor"
+            app:boxCornerRadiusBottomEnd="4dp"
+            app:boxCornerRadiusBottomStart="4dp"
+            app:boxCornerRadiusTopEnd="4dp"
+            app:boxCornerRadiusTopStart="4dp"
+            app:boxStrokeColor="@color/white"
+            app:boxStrokeWidth="0dp"
+            app:boxStrokeWidthFocused="0dp"
+            app:hintTextColor="@color/white"
+
+            app:passwordToggleTint="@android:color/white">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/edit_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/editTextColor"
+                android:drawableEnd="@drawable/ic_local_phone"
+                android:drawableRight="@drawable/ic_local_phone"
+                android:drawableTint="@color/white"
+                android:ellipsize="end"
+                android:inputType="number"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:textCursorDrawable="@null"></com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_setup_my_profile"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_input_phone"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:text="Done"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/white"
+            app:cornerRadius="16dp"
+            app:icon="@drawable/ic_success"
+            app:iconGravity="textStart"
+            app:iconTint="@color/black"
+
+            app:rippleColor="@color/white"></com.google.android.material.button.MaterialButton>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@id/btn_setup_my_profile"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginRight="16dp"
+            android:text="Skip"
+            android:textColor="@color/black"
+            app:backgroundTint="@color/red"
+            app:cornerRadius="16dp"
+            app:iconGravity="textStart"
+
+            app:rippleColor="@color/white"></com.google.android.material.button.MaterialButton>
+
+
+    </RelativeLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_main_layout"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone"></ProgressBar>
+
+</RelativeLayout>

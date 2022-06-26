@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "792971500456",
+    "project_id": "cheerthemup-c910e",
+    "storage_bucket": "cheerthemup-c910e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:792971500456:android:a6fe4ea00e4cbdb0fd1b9d",
+        "android_client_info": {
+          "package_name": "com.app.cheerthemup"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "792971500456-bkdt4prm5jfg7e76ct7akh1m1eq1cp2q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.app.cheerthemup",
+            "certificate_hash": "704f836f03001baac94aa5de9f336757bb622adc"
+          }
+        },
+        {
+          "client_id": "792971500456-rv57r4hk6lcumen32mkft6474f43hc9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDNCb4JWmcbd6rnI1cLMziHrK7KzVr_lt0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "792971500456-rv57r4hk6lcumen32mkft6474f43hc9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

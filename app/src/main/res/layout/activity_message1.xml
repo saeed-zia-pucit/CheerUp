@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rel_msg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".views.activities.MessageActivity1">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize"
+        android:layout_alignParentTop="true"
+        app:elevation="0dp">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar"
+            app:titleTextAppearance="@style/Toolbar.TitleText"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/black"></androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <TextView
+        android:id="@+id/txt_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/appbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="64dp"
+        android:background="@drawable/bg_text_msg"
+        android:maxLines="6"
+        android:lineSpacingExtra="2dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="4dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="14.5dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:scrollbars="vertical"
+        android:text=""
+        android:textColor="@color/black"
+        ></TextView>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:id="@+id/txt_input_msg"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_msg"
+        android:layout_centerInParent="true"
+
+        android:layout_margin="10dp"
+        android:layout_marginTop="16dp"
+        android:hint="Your message here.."
+
+        android:textColorHint="@color/white"
+        app:boxStrokeColor="@color/white"
+        app:hintTextColor="@color/white"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/edit_msg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:gravity="top|left"
+            android:inputType="textMultiLine"
+            android:lines="6"
+            android:maxLines="6"
+
+            android:scrollbars="vertical"
+            android:textColor="@color/white"
+            android:textCursorDrawable="@null"></com.google.android.material.textfield.TextInputEditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_send"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_input_msg"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:backgroundTint="#fff"
+        android:text="Send"
+        android:textColor="@color/black"></com.google.android.material.button.MaterialButton>
+
+
+    <LinearLayout
+        android:id="@+id/lin_premium"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_send"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/separator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/btn_send"
+            android:layout_margin="16dp"
+
+            android:background="@color/white" />
+
+
+        <TextView
+            android:id="@+id/txt_hide"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/separator"
+            android:gravity="center"
+            android:text="Want to hide your identity ? Upgrade to premium"
+            android:textColor="@color/white"></TextView>
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_upgrade_to_premium"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt_hide"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="@color/red"
+            android:text="Upgrade to premium"
+            android:textColor="@color/white"></com.google.android.material.button.MaterialButton>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/lin_identity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lin_premium"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp"
+        android:visibility="gone">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want to hide your identity?"
+            android:textColor="@color/red"
+            android:textSize="16sp"></TextView>
+
+        <CheckBox
+            android:id="@+id/checkbox_hide_show_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></CheckBox>
+    </LinearLayout>
+
+</RelativeLayout>

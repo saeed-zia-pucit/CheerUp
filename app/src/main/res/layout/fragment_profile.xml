@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    >
+
+
+    <ImageView
+        android:id="@+id/img_profile"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/ic_profile"></ImageView>
+
+    <RelativeLayout
+
+        android:id="@+id/rel_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/img_profile"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginRight="10dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_mail_outline_24"
+            app:tint="@color/black"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/lin_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_email"
+            android:orientation="vertical">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txt_user_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/red"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgbtn_edit_email"-->
+
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:src="@drawable/ic_edit"></ImageView>-->
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rel_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_email"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_outline_local_phone_24"
+            app:tint="@color/black"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/lin_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_phone"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txt_user_phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/red"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgbtn_edit_phone"-->
+
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:src="@drawable/ic_edit"></ImageView>-->
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rel_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_phone"
+        android:layout_marginLeft="10dp"
+
+        android:layout_marginRight="10dp"
+        android:padding="8dp">
+
+        <ImageView
+            android:id="@+id/img_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentLeft="true"
+            android:src="@drawable/ic_baseline_person_outline_24"
+            app:tint="@color/black"></ImageView>
+
+        <LinearLayout
+            android:id="@+id/lin_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/img_username"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Username"
+                android:textColor="@color/red"
+                android:textSize="12sp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txt_user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:textColor="@color/red"
+                android:textSize="14sp"></TextView>
+
+        </LinearLayout>
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/imgbtn_edit_phone"-->
+
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_alignParentEnd="true"-->
+        <!--            android:layout_alignParentRight="true"-->
+        <!--            android:src="@drawable/ic_edit"></ImageView>-->
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/lin_identity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rel_username"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Want to hide your identity?"
+            android:textColor="@color/red"
+            android:textSize="16sp"></TextView>
+
+        <CheckBox
+            android:id="@+id/checkbox_hide_show_identity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"></CheckBox>
+    </LinearLayout>
+
+
+    <!--    <View-->
+    <!--        android:id="@+id/separator"-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="1dp"-->
+    <!--        android:layout_below="@id/rel_phone"-->
+    <!--        android:layout_margin="22dp"-->
+    <!--        android:background="@color/white"></View>-->
+
+    <!--    <com.google.android.material.button.MaterialButton-->
+    <!--        android:id="@+id/btn_delete_acc"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/separator"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:text="Delete account"-->
+    <!--        android:textAllCaps="false"-->
+    <!--        android:textColor="@color/appGreenColor"-->
+    <!--        app:backgroundTint="@color/appCreamColor"-->
+    <!--        app:cornerRadius="16dp"-->
+    <!--        app:icon="@drawable/ic_delete"-->
+    <!--        app:iconGravity="textStart"-->
+    <!--        app:iconTint="@color/appGreenColor"></com.google.android.material.button.MaterialButton>-->
+
+
+    <!--    <ProgressBar-->
+    <!--        android:id="@+id/progress_bar_user_profile"-->
+
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_below="@id/btn_delete_acc"-->
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:visibility="gone"></ProgressBar>-->
+</RelativeLayout>
